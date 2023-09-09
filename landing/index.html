@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foowearz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1ddff;
+        }
+
+        #header {
+            height: max-content;
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            padding: 1rem 0;
+            position: sticky;
+            background-color: #f1ddff;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 800px) {
+            #header {
+                text-align: center;
+                height: auto;
+            }
+        }
+
+        .header-content-div {
+            max-width: 95rem;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 991px) {
+            .header-content-div {
+                max-width: 75rem;
+            }
+        }
+
+        .header {
+            background-color: #7c589f89;
+            color: #4b28618c;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            position: relative;
+            top: 0.8rem;
+            float: right;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 1.5rem 0;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                position: static;
+                float: none;
+                font-size: 1.4rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000000;
+            margin: 0 0.5rem;
+            padding: 0 0.6rem;
+        }
+
+        @media (max-width: 475px) {
+            .nav-link {
+                margin: 0 0.2rem;
+                padding: 0 0.2rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .nav-link:hover {
+            color: #4b28618c;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 1rem;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #7c589f89;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        #contact {
+            background-color: #7c589f89;
+            color: #fafafa;
+        }
+
+        #contact h6 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        input[type="email"] {
+            border: none;
+            outline: 0;
+            font-size: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            padding: 10px 20px;
+        }
+
+
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #7c589f89;
+            color: #fff;
+        }
+
+        h3 {
+            padding: 20px;
+            margin-left: 250px;
+        }
+
+        h6 {
+            padding: 40px;
+        }
+
+        form {
+            padding: 40px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-content-div">
+            <nav id="nav-bar">
+                <a href="#about" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">STOCK</a>
+                <a href="trend" class="nav-link">TRENDING</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <div class="header">
+        <h1>Welcome to Our Foowearz Custom Store</h1>
+        <p>Step into style and comfort.</p>
+    </div>
+    <div class="container">
+        <div class="product">
+            <img src="fw3.jpeg" alt="Shoe 2">
+            <div class="product-info">
+                <h2 class="product-title">Comfy Sliders</h2>
+                <p class="product-price">$64.99</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <section class="sec-padding" id="contact">
+        <h3 class="section-heading">CONTACT</h3>
+        <div class="sec-content-div flexible">
+            <h6>To make an order or just to know more contact us with your:</h6>
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <input type="email" name="email" id="email" placeholder=" Email Address" required />
+                <input type="submit" class="btn" id="submit" value="Contact" />
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <p>&copy; since1989. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
